@@ -48,11 +48,9 @@ public class JavaLoops02 {
             int a = in.nextInt();
             int b = in.nextInt();
             int n = in.nextInt();
+            int result = a;
             for(int j=1; j<=n; j++){
-                int result = a;
-                for(int k=1; k<=j; k++){
-                    result += Math.pow(2,k-1)*b;
-                }
+                result += Math.pow(2,j-1)*b;
                 System.out.print(result + " ");
             }
             System.out.println();
